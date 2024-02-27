@@ -24,5 +24,5 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('registery/', views.registry_view , name='registry_view'),
+    path('', views.registry_view , name='registry_view'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
